@@ -1,7 +1,7 @@
-var _string = 'Hallo welt';
-var _number = 23.45.toString();
+var _string = 'Hallo welt'.;
+var _number = 23.45;
 var _bool = true;
-var _undefined;
+var _undefined = undefined;
 var _null = null;
 var _array = [
   'Wert',
@@ -12,6 +12,7 @@ var _array = [
   {key: "value", 1: "test"},
   undefined
 ];
+
 var _obj = {};
 
 var users = [

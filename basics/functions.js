@@ -39,12 +39,13 @@ function User(firstname, lastname) {
 
     this.sayMyName = function (name) {
         console.log(this.name + " " + this.lastname);
-    }
+    };
 
     this.sendMail = function () {
         // do it
-    }
+    };
 }
+
 
 var marten = new User('Marten', 'Stockenberg');
 marten.sayMyName();
