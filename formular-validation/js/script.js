@@ -1,6 +1,5 @@
 
 var form = document.forms[0];
-
 var customerFeedback = {
     firstname: "Bitte das Vorname Feld ausfüllen",
     agb: "Bitte akzeptieren sie unsere Allg. Blaaa",
@@ -8,7 +7,6 @@ var customerFeedback = {
         return "Das " + fieldname + " feld ist pflicht..."
     }
 };
-
 var contact = {
     data: {},
     add: function (key, value) {
@@ -27,7 +25,6 @@ form.onsubmit = function (ev) {
         deleteErrors('err_' + fields[i].name);
 
         switch (fields[i].type){
-
             case 'radio':
                 if(isChecked(fields[i])){
                     contact.add(fields[i].name, fields[i].value);
@@ -44,8 +41,6 @@ form.onsubmit = function (ev) {
                 if(isChecked(fields[i])){
                     contact.add(fields[i].name, fields[i].value);
                 }
-
-                console.log(fields[i].checked);
                 break;
 
             default:
@@ -86,7 +81,4 @@ form.onsubmit = function (ev) {
         }
     }
 
-
-    console.log(contact);
-    console.log(contact.get('firstname'));
 };
