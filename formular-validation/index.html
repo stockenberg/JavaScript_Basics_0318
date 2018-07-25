@@ -12,12 +12,17 @@
 <form action="">
     <div>
         <label for="firstname">Vorname</label>
-        <input type="text" id="firstname">
+        <input type="text" id="firstname" name="bla" data-required="true">
+    </div>
+
+    <div>
+        <label for="emai">E-Mail-Adresse</label>
+        <input type="email" id="email" name="bla">
     </div>
 
     <div>
         <label for="gender">Geschlecht</label>
-        <select name="" id="gender">
+        <select name="gender" id="gender">
             <option value="">select..</option>
             <option value="male">male</option>
             <option value="female">female</option>
@@ -28,6 +33,16 @@
     <div>
         <label for="agb">AGB</label>
         <input type="checkbox" id="agb" name="agb" data-required="true">
+    </div>
+
+    <div>
+        <label for="background">background</label>
+        <input type="color" id="background" name="background" data-required="true">
+    </div>
+
+    <div>
+        <label for="datetime-local">datetime-local</label>
+        <input type="date" id="datetime-local" name="datetime-local" data-required="true">
     </div>
 
     <div>
