@@ -11,25 +11,8 @@ form.onsubmit = function (ev) {
         switch (fields[i].type){
 
             case 'radio':
-                if(isRequired(fields[i].parentElement)){
-                    var radioIsChecked;
-
-                    var radios = fields[i].parentElement.children;
-                    for(var x = 0; x < radios.length; x++){
-
-                        if(radios[x].tagName === "INPUT"){
-                            if(radios[x].checked){
-                                radioIsChecked = true;
-                            }else{
-                                radioIsChecked = false;
-                            }
-                        }
-                    }
-
-                    console.log("RADIO: " + radioIsChecked);
-                    if(radioIsChecked){
-                        contact['myName'] = fields[i].value;
-                    }
+                if(isChecked(fields[i])){
+                    contact[fields[i].name] = fields[i].value;
                 }
                 break;
 
