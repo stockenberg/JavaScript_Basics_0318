@@ -1,5 +1,14 @@
 
 var form = document.forms[0];
+
+var customerFeedback = {
+    firstname: "Bitte das Vorname Feld ausfüllen",
+    agb: "Bitte akzeptieren sie unsere Allg. Blaaa",
+    default: function (fieldname){
+        return "Das " + fieldname + " feld ist pflicht..."
+    }
+};
+
 var contact = {
     data: {},
     add: function (key, value) {
@@ -14,6 +23,9 @@ form.onsubmit = function (ev) {
     ev.preventDefault();
     var fields = ev.target;
     for(var i = 0; i < fields.length - 1; i++){
+
+        deleteErrors('err_' + fields[i].name);
+
         switch (fields[i].type){
 
             case 'radio':
@@ -25,7 +37,7 @@ form.onsubmit = function (ev) {
             case 'checkbox':
                 if(isRequired(fields[i])){
                     if(!isChecked(fields[i])){
-                        console.log("Das " + fields[i].name + " feld ist pflicht...");
+                        writeErrors(fields[i].parentElement, fields[i].name);
                     }
                 }
 
@@ -39,7 +51,7 @@ form.onsubmit = function (ev) {
             default:
                 if(isRequired(fields[i])){
                     if(fields[i].value === ""){
-                        console.log("Das " + fields[i].name + " feld ist pflicht...");
+                        writeErrors(fields[i].parentElement, fields[i].name);
                     }
                 }
 
@@ -57,6 +69,21 @@ form.onsubmit = function (ev) {
 
     function isChecked(field){
         return field.checked;
+    }
+
+    function writeErrors(container, name){
+        var para = document.createElement('p');
+        para.classList.add('error');
+        para.classList.add('err_' + name);
+        para.innerText = (customerFeedback[name] !== undefined) ? customerFeedback[name] : customerFeedback.default(name);
+        container.appendChild(para);
+    }
+
+    function deleteErrors(fieldname){
+        var errorField = document.getElementsByClassName(fieldname)[0];
+        if(errorField !== undefined){
+            errorField.remove();
+        }
     }
 
 
