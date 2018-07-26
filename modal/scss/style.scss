@@ -1,0 +1,25 @@
+
+#modal{
+  position: fixed;
+  top: 10%;
+  width: 700px;
+  left: calc(50% - 350px);
+  border: thin solid black;
+  -webkit-box-shadow:  0px 0px 5px rgba(0,0,0,.5);
+  -moz-box-shadow:  0px 0px 5px rgba(0,0,0,.5);
+  box-shadow:  0px 0px 5px rgba(0,0,0,.5);
+  display: none;
+
+  footer{
+    background: gray;
+    padding: 10px;
+  }
+
+  header{
+    border-bottom: thin solid black;
+  }
+
+  .modal-content, header{
+    padding: 20px;
+  }
+}
