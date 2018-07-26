@@ -8,8 +8,12 @@
 
 
 # 25.07. 
-- (done) Feedback zu Formularvalidierungen
+- Feedback zu Formularvalidierungen
 - Git Basics - init, add, commit, branch, clone, merge
 - Effizientere Formularvalidierung
+
+# 26.07.
 - Praxisbeispiele DOM Manipulation
-- Recherche Felder vorausfüllen..
+- Geolocation
+- Web Storage
+- Audio / Video
