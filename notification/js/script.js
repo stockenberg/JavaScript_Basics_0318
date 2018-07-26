@@ -58,11 +58,5 @@ document.getElementById('success').onclick = function () {
     message.success(document.getElementById('notification_message').value);
 } */
 
-var message = new Message();
-message.success("Formular wurde erfolgreich versandt");
-message.warning("Formular wurde erfolgreich versandt");
-message.error("Formular wurde erfolgreich versandt");
-message.info("Formular wurde erfolgreich versandt");
-
 
 

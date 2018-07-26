@@ -17,6 +17,7 @@ var contact = {
     }
 };
 
+var message = new Message();
 form.onsubmit = function (ev) {
     ev.preventDefault();
     var fields = ev.target;
@@ -35,6 +36,8 @@ form.onsubmit = function (ev) {
                 if(isRequired(fields[i])){
                     if(!isChecked(fields[i])){
                         writeErrors(fields[i].parentElement, fields[i].name);
+                        message.success(customerFeedback[fields[i].name]);
+
                     }
                 }
 
