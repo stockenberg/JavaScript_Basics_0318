@@ -7,6 +7,16 @@
 - Modal
 - Tabs / Pills
 
+# Topic to cover
+- Geolocation
+- Web Storage
+- Audio / Video
+- Drag and Drop
+- Prototypes
+- Dates
+- jQuery
+
+
 # Git Commands
 - **git clone resposity/url.git**
 - **git add -A**
@@ -43,6 +53,7 @@
 
     
 # Lesson Log
+
 ## 25.07. 
 - Feedback zu Formularvalidierungen
 - Git Basics - init, add, commit, branch, clone, merge
@@ -50,6 +61,9 @@
 
 ## 26.07.
 - Praxisbeispiele DOM Manipulation
-- Geolocation
-- Web Storage
-- Audio / Video
+
+## 01.08.
+- Image Slider
+- Tabs
+- Ajax
+- BOM
