@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+#slider {
+  position: relative;
+  width: 700px;
+  height: 500px;
+  margin: 70px;
+}
+#slider #bullets {
+  position: absolute;
+  bottom: -70px;
+  width: 700px;
+  text-align: center;
+  z-index: 500;
+}
+#slider #bullets li {
+  display: inline;
+  font-size: 60px;
+}
+#slider figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#slider figure.show {
+  display: block;
+}
+#slider figure figcaption {
+  position: relative;
+  bottom: 69px;
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 20px;
+}
+#slider .next {
+  position: absolute;
+  right: -50px;
+  top: 24vh;
+  font-size: 40px;
+}
+#slider .prev {
+  position: absolute;
+  left: -50px;
+  top: 24vh;
+  font-size: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */
