@@ -65,5 +65,5 @@
 ## 01.08.
 - Image Slider
 - Tabs
-- Ajax
+- Ajax + Axios
 - BOM
