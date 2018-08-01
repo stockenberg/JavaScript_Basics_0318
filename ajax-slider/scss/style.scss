@@ -9,14 +9,34 @@ a{
 #slider {
   position: relative;
   width: 700px;
+  height: 500px;
   margin: 70px;
+  #bullets{
+    position: absolute;
+    bottom: -70px;
+    width: 700px;
+    text-align: center;
+    z-index: 500;
+    li{
+      display: inline;
+      font-size: 60px;
+    }
+  }
   figure {
     position: absolute;
     top: 0;
     left: 0;
     display: none;
-    &:nth-child(3) {
+    &.show {
       display: block;
+    }
+    figcaption{
+      position: relative;
+      bottom: 69px;
+      font-size: 20px;
+      background: rgba(0,0,0,.7);
+      color: white;
+      padding: 20px;
     }
   }
   .next{

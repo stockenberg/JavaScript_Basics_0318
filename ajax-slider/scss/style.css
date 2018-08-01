@@ -11,7 +11,19 @@ a {
 #slider {
   position: relative;
   width: 700px;
+  height: 500px;
   margin: 70px;
+}
+#slider #bullets {
+  position: absolute;
+  bottom: -70px;
+  width: 700px;
+  text-align: center;
+  z-index: 500;
+}
+#slider #bullets li {
+  display: inline;
+  font-size: 60px;
 }
 #slider figure {
   position: absolute;
@@ -19,8 +31,16 @@ a {
   left: 0;
   display: none;
 }
-#slider figure:nth-child(3) {
+#slider figure.show {
   display: block;
+}
+#slider figure figcaption {
+  position: relative;
+  bottom: 69px;
+  font-size: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 20px;
 }
 #slider .next {
   position: absolute;
