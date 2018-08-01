@@ -1,3 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+#slider {
+  position: relative;
+  width: 700px;
+  margin: 70px;
+}
+#slider figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+#slider figure:nth-child(3) {
+  display: block;
+}
+#slider .next {
+  position: absolute;
+  right: -50px;
+  top: 24vh;
+  font-size: 40px;
+}
+#slider .prev {
+  position: absolute;
+  left: -50px;
+  top: 24vh;
+  font-size: 40px;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,10 +1,47 @@
 [
   {
-    "username": "Test",
-    "age": 12
+    "image_title": "Katze1",
+    "image_url": "https://placekitten.com/700/500",
+    "image_alt": "Knuffige katze",
+    "image_dimensions": {
+      "height": 500,
+      "width": 700
+    }
   },
   {
-    "username": "Test2",
-    "age": 15
+    "image_title": "Katze2",
+    "image_url": "https://placekitten.com/700/500",
+    "image_alt": "Knuffige katze2",
+    "image_dimensions": {
+      "height": 500,
+      "width": 700
+    }
+  },
+  {
+    "image_title": "Katze3",
+    "image_url": "https://placekitten.com/700/500",
+    "image_alt": "Knuffige katze2",
+    "image_dimensions": {
+      "height": 500,
+      "width": 700
+    }
+  },
+  {
+    "image_title": "Katze4",
+    "image_url": "https://placekitten.com/700/500",
+    "image_alt": "Knuffige katze2",
+    "image_dimensions": {
+      "height": 500,
+      "width": 700
+    }
+  },
+  {
+    "image_title": "Katze5",
+    "image_url": "https://placekitten.com/700/500",
+    "image_alt": "Knuffige katze2",
+    "image_dimensions": {
+      "height": 500,
+      "width": 700
+    }
   }
 ]

@@ -1,20 +1,28 @@
-
-
-document.getElementById('cto').onclick = function () {
-    var ajax = new XMLHttpRequest();
-    ajax.onreadystatechange = function () {
-        if(this.readyState === 4 && this.status === 200){
-            var usersList = document.getElementById('userlist');
-            var users = JSON.parse(this.responseText);
-            for(var i = 0; i < users.length; i++){
-                var li = document.createElement('li');
-                li.innerHTML = users[i].username;
-                usersList.appendChild(li);
-            }
+axios.get('ajax.json')
+    .then(res => {
+        console.log(res.data);
+        for(var i = 0; i < res.data.length; i++){
+            buildSlide(res.data[i]);
         }
-    };
+    });
 
-    ajax.open('GET', 'ajax.json');
-    ajax.send();
-};
 
+/**
+ * Builds slide items for image slider from ajax call
+ */
+function buildSlide(imgObj) {
+
+    var figure = document.createElement('figure');
+    var figcaption = document.createElement('figcaption');
+    var img = document.createElement('img');
+
+    figcaption.innerText = imgObj.image_title;
+
+    img.src = imgObj.image_url;
+    img.alt = imgObj.image_alt;
+
+    figure.appendChild(img);
+    figure.appendChild(figcaption);
+
+    document.getElementById('slider').appendChild(figure);
+}
