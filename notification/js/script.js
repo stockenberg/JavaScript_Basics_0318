@@ -49,7 +49,7 @@ function Message(){
 
     this.info = function (msg) {
         this._background = "#03a9f4";
-        this._buildNotification(msg);x
+        this._buildNotification(msg);
     }
 }
 
