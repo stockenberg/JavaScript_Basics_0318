@@ -6,15 +6,30 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-  
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+         * element that contains the map. */
+        #map {
+            height: 50%;
+        }
+        /* Optional: Makes the sample page fill the window. */
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
 </head>
 <body>
+<button id="shuffleDeck">Shuffle them</button>
+<button id="pullCard">pull Card</button>
 
-
-<div id="main">
+<div id="cards">
 
 </div>
 
+<script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/main.js"></script>
+
 </body>
 </html>
