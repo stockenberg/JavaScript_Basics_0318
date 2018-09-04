@@ -11,7 +11,6 @@ import Test from './export.js';
 /**
  * Call it
  */
-
 myFunction();
 myFunction2();
 
