@@ -21,6 +21,12 @@ dest.baz  // 4
 [ 1, 3, 4, 2 ].findIndex(x => x > 3) // 2
 
 /**
+ * ################################
+ * ######### STRINGS ##############
+ * ################################
+ */
+
+/**
  * String Repeat
  */
 
@@ -37,6 +43,12 @@ dest.baz  // 4
 "hello".includes("ell")       // true
 "hello".includes("ell", 1)    // true
 "hello".includes("ell", 2)    // false
+
+/**
+ * ################################
+ * ######### NUMBERS ##############
+ * ################################
+ */
 
 /**
  * Number Type checking
@@ -56,3 +68,12 @@ Number.isFinite(123) // true
 
 Number.isSafeInteger(42) // true
 Number.isSafeInteger(9007199254740992) // false
+
+
+/**
+ * Truncate Numbers
+ */
+
+console.log(Math.trunc(42.7)) // 42
+console.log(Math.trunc( 0.1)) // 0
+console.log(Math.trunc(-0.1)) // -0
