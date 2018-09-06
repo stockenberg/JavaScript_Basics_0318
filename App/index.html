@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div#slider{
+            position: relative;
+            height: 300px;
+        }
+        figure{
+            position: absolute;
+            display: none;
+        }
+        figure.show{
+            display: block;
+        }
+    </style>
+</head>
+<body> 
+
+    <div id="slider">
+        <figure class="show">
+            <img src="http://lorempixel.com/400/200/" alt="">
+            <figcaption>Das ist die erste</figcaption>
+        </figure>
+        <figure>
+            <img src="http://lorempixel.com/400/200/" alt="">
+            <figcaption>Das ist die zweite</figcaption>
+        </figure>
+        <figure>
+            <img src="http://lorempixel.com/400/200/" alt="">
+            <figcaption>Das ist die dritte</figcaption>
+        </figure>
+        <figure>
+            <img src="http://lorempixel.com/400/200/" alt="">
+            <figcaption>Das ist die vierte</figcaption>
+        </figure>
+    </div>
+
+    <button class="next">Next</button>
+
+    <button id="test">Click me</button>
+    <button class="box">Click me</button>
+    <button class="box">Click me</button>
+    <button class="box">Click me</button>
+    <button class="box">Click me</button>
+    <button class="box">Click me</button>
+    <button onclick="app.doSomething()">Click me</button>
+
+
+    <script type="module" src="assets/js/App.js"></script>
+</body>
+</html>
