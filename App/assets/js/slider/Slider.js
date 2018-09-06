@@ -16,7 +16,7 @@ class Slider{
                 }
 
                 figure.nextElementSibling.classList.add('show');
-                return;
+                return
             }
         }
     }

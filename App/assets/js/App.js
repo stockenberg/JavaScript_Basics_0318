@@ -16,6 +16,7 @@ class App{
      * @param {Event} e 
      */
     handleBoxClick (e) {
+        Logger._(e);
         Logger._('Hat geklappt');
     }
 
